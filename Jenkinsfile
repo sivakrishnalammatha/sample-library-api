@@ -13,7 +13,7 @@ pipeline {
                 //git 'https://github.com/mahendra-shinde/sample-library-api/'
                 sh "mvn  clean package"
                 // To run Maven on a Windows agent, use
-                #bat "mvn  clean package"
+                //bat "mvn  clean package"
                 }
             }
 
