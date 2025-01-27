@@ -11,9 +11,12 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 //git 'https://github.com/mahendra-shinde/sample-library-api/'
-
+                if(isunix()){
+                    sh "mvn  clean package"
+                }else{
                 // To run Maven on a Windows agent, use
-                bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                bat "mvn  clean package"
+                }
             }
 
             post {
