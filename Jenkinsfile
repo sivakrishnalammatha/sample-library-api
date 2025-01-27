@@ -14,7 +14,7 @@ pipeline {
                 sh "mvn  clean package"
                 // To run Maven on a Windows agent, use
                 //bat "mvn  clean package"
-                }
+                
             }
 
             post {
